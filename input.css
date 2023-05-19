@@ -27,6 +27,6 @@
 
 @media screen(xl) {
   body {
-    @apply bg-black text-white;
+    @apply bg-red text-white;
   }
 }
