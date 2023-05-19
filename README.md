@@ -20,3 +20,30 @@ Follow
 npm run build should create a css folder and styles.css file
 
 npm run watch to watch
+
+# Directives
+
+```
+@layer base {
+  h1 {
+    font-size: 2rem;
+    color: red;
+  }
+  h2 {
+    @apply text-xl;
+    @apply bg-red-200;
+  }
+}
+
+@layer components {
+  .btn-blue {
+    @apply bg-blue-500 py-2 px-4 rounded-md shadow-md shadow-red-200 hover:bg-blue-700;
+  }
+}
+```
+
+# Functions
+
+- Theme functions
+  - Allows to grab config values : for example extend spacing
+- Screen function

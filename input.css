@@ -2,3 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 /* postcss extention :INFO */
+
+@layer base {
+  h1 {
+    font-size: 2rem;
+    color: red;
+  }
+  h2 {
+    @apply text-xl;
+    @apply bg-red-200;
+  }
+}
+
+@layer components {
+  .btn-blue {
+    @apply bg-blue-500 py-2 px-4 rounded-md shadow-md shadow-red-200 hover:bg-blue-700;
+  }
+}
+
+.content-area {
+  @apply bg-green-300;
+  height: theme("spacing.128");
+}
+
+@media screen(xl) {
+  body {
+    @apply bg-black text-white;
+  }
+}
